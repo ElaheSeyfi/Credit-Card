@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  font-family: "Concert One", sans-serif;
+  background-image: linear-gradient(45deg, #13bcf5, #001b62);
+}
+
+.container {
+  width: 400px;
+  height: 570px;
+  background-color: white;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 20px;
+  > .card {
+    width: 450px;
+    height: 230px;
+    background-image: url("../img/1.jpg");
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    transform: translate(-25px, -43px);
+    padding: 15px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    box-shadow: 0px 0px 20px #13bcf5;
+    > .content {
+      width: 100%;
+      height: 100%;
+      transform: translateZ(30px);
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+
+      > .imgs {
+        margin-bottom: 10px;
+        > img {
+          width: 50px;
+        }
+      }
+      > h1 {
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+      }
+      > #cardholder {
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+      }
+      > div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: white;
+      }
+    }
+  }
+  > .box {
+    padding: 0 20px;
+    > .row {
+      display: flex;
+      margin-top: 10px;
+      > input {
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+        margin: 0 10px;
+        border: 1px solid #333;
+        outline: none;
+      }
+    }
+    > p {
+      margin-top: 10px;
+    }
+    > .row {
+      margin-top: 10px;
+      > input {
+        width: 80%;
+        height: 40px;
+      }
+    }
+    > .row {
+      > select {
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+        margin: 0 10px;
+        > option {
+        }
+      }
+      > #code {
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+      }
+      > div {
+        width: 100%;
+        > button {
+          width: 100%;
+          height: 40px;
+        }
+      }
+    }
+  }
+  > .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    > button {
+      width: 50%;
+      height: 40px;
+      border-radius: 10px;
+      background-color: #13bcf5;
+      margin-top: 50px;
+      font-family: "Concert One", sans-serif;
+      font-size: 20px;
+    }
+  }
+}
+.backcard {
+  border-radius: 10px;
+  background-image: url("../img/2.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: perspective(800px) translateZ(-7px) translate(-25px, -43px);
+  width: 450px;
+  height: 230px;
+  transition: 1s;
+  > div {
+    width: 100%;
+    height: 40px;
+    background-color: #0d0c24;
+    margin-top: 50px;
+  }
+  > h2 {
+    padding: 10px;
+  }
+}
+.hide {
+  opacity: 0;
+}
+.protifilo{
+  width: 150px;
+  height:150px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 1;
+  >figure{
+      width: 100px;
+      height:100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 10%;
+      &:hover>span{
+        &:nth-of-type(1){
+          transform: translate(-100px, -100px);
+        }
+        &:nth-of-type(2){
+          transform: translate(-100px, -20px);
+        }
+        &:nth-of-type(3){
+          transform: translate(-100px, 50px);
+        }
+      }
+      >span{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        background-color: #001b62;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        >a{
+          color: white;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          position: relative;
+          >i{
+            color: white;
+          }
+        }
+        &::after{
+          width: 50px;
+          height: 50px;
+          display: flex;
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 50px;
+        }
+      }
+      >img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 50%;
+        border: 10px solid white;
+        z-index: 2;
+        position: absolute;
+
+      }
+      }
+    }
+
+  
