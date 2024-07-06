@@ -1,6 +1,6 @@
 # credit-card
 
-![Screenshot (294)](https://github.com/SabaAsgarian/Credit-Card-With-JavaScript/assets/155986797/e76e91f2-7275-45dc-bd54-03c0dd20969d)
+![Screenshot (295)](https://github.com/ElaheSeyfi/creadit-card/assets/155986797/b7c530ae-1ffd-4c8f-9b70-2b052b5711ce)
 
 - [Demo Project](https://elaheseyfi.github.io/creadit-card/)
 
